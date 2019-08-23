@@ -202,6 +202,7 @@ button {
 .doctor-info {
   float: left;
   margin-left: 15%;
+  margin-bottom: 15px;
 }
 
 .doctor-info p {
@@ -226,4 +227,60 @@ button {
   content: "";
   display: block;
   clear: both;
+}
+
+.article-name {
+  float: left;
+  margin-left: 21.5%;
+  margin-right: 27%;
+  width: 52%;
+}
+
+.article-name p {
+  margin-bottom: 15px;
+}
+
+.article-time {
+  float: left;
+}
+
+.big-ul {
+  display: block;
+  width: 100%;
+}
+
+.big-ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.small-ul {
+  float: right;
+  text-align: right;
+  margin-left: 10%;
+}
+
+.media-icon {
+  float: right;
+  margin-right: 7px;
+}
+
+.small-ul i {
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.article {
+  margin-top: 15px;
+}
+
+.blue {
+  color: #326891;
+  text-decoration: underline;
+}
+
+.blue:hover {
+  text-decoration: none;
 }
