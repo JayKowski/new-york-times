@@ -194,14 +194,24 @@ button {
 }
 
 .doctor-info {
-  padding-top: 20px;
-  text-align: center;
-  margin: 0 auto;
+  float: left;
+  margin-left: 15%;
 }
 
 .doctor-info p {
   display: inline-block;
   font-size: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.doctor-info .tiny {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 0.6;
+}
+
+.doctor-info .tinier {
+  font-size: 0.7rem;
+  color: #aaa;
 }
