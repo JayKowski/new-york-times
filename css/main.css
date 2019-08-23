@@ -144,6 +144,12 @@ header {
   background-color: #fff;
 }
 
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .navigation {
   border-bottom: 1px solid #dcdcdc;
   width: 100%;
@@ -214,4 +220,10 @@ button {
 .doctor-info .tinier {
   font-size: 0.7rem;
   color: #aaa;
+}
+
+.doctor-info::after {
+  content: "";
+  display: block;
+  clear: both;
 }
