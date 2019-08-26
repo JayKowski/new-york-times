@@ -163,6 +163,15 @@ figcaption span:last-child {
 	letter-spacing: 0.05em;
 }
 
+.blue {
+	color: #326891;
+	text-decoration: none;
+}
+
+.blue:hover {
+	text-decoration: underline;
+}
+
 /* Nav Bar */
 
 .navigation nav {
@@ -241,6 +250,8 @@ ul.nav-items {
 .nav-items .logo {
 	cursor: pointer;
 }
+
+/* Main Content */
 
 .wrapper .header-content {
 	clear: both;
@@ -520,11 +531,111 @@ ul.nav-items {
 	background-color: #000;
 }
 
-.blue {
-	color: #326891;
-	text-decoration: underline;
+.sect-two {
+	margin-top: 80px;
 }
 
-.blue:hover {
-	text-decoration: none;
+.sect-two .center-video {
+	margin: 40px 0;
+}
+
+.center-image {
+	margin: 30px 0;
+}
+
+.sect-two .center-image img {
+	width: 100%;
+}
+.sect-two footer p {
+	color: #888;
+	font-size: 0.7rem;
+	line-height: 14px;
+	font-weight: lighter;
+}
+
+.footer-text {
+	margin: 20px 0;
+}
+
+.footer-links button {
+	width: 330px;
+	margin: 0;
+	cursor: pointer;
+	font-size: 0.73rem;
+	padding: 12px;
+}
+
+/* Aside Content */
+
+aside {
+	float: left;
+	width: 50px;
+}
+
+aside .aside-content {
+	width: 170px;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+aside .signup-science {
+	position: absolute;
+	top: 5%;
+}
+
+aside .editors-pick {
+	position: absolute;
+	top: 12%;
+}
+
+aside .signup-science h2 {
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+aside .signup-science p {
+	color: #333;
+	font-size: 0.75rem;
+	line-height: 15px;
+	letter-spacing: 0.05em;
+	font-weight: lighter;
+	margin: 10px 0;
+}
+.signup-science button {
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+}
+.editors-pick .pick-items {
+	overflow: auto;
+	position: relative;
+	margin-bottom: 15px;
+}
+.editors-pick h2 {
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	margin-bottom: 15px;
+	padding-bottom: 12px;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.02em;
+	border-bottom: 1px solid rgb(226, 226, 226);
+	width: 200px;
+}
+.editors-pick p {
+	font-size: 0.8rem;
+}
+.editors-pick p:hover {
+	text-decoration: underline;
+}
+.editors-pick .image {
+	float: left;
+	margin-right: 5px;
+}
+.editors-pick .text {
+	position: absolute;
+	width: 110px;
+	bottom: 7px;
+	line-height: 18px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
