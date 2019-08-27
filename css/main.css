@@ -176,13 +176,19 @@ figcaption span:last-child {
 
 .navigation nav {
 	width: 100%;
-	overflow: auto;
 	border-bottom: 1px solid #e2e2e2;
 	background-color: #fff;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 }
+
+.navigation nav::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 ul.nav-items {
 	margin: 10px 20px;
 }
@@ -285,13 +291,22 @@ ul.nav-items {
 	line-height: 0.6;
 }
 
-.main-container {
+.hero {
 	position: relative;
 	top: 100px;
+}
+
+.main-container {
 	width: 85%;
 	height: 100%;
 	margin: 0 auto;
-	overflow: hidden;
+	/* overflow: hidden; */
+}
+
+.main-container::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 .main-container main {
 	float: left;
@@ -572,6 +587,12 @@ aside {
 	width: 50px;
 }
 
+aside::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 aside .aside-content {
 	width: 170px;
 	font-family: nyt-franklin, helvetica, arial, sans-serif;
@@ -580,6 +601,7 @@ aside .aside-content {
 aside .signup-science {
 	position: absolute;
 	top: 5%;
+	width: 190px;
 }
 
 aside .editors-pick {
@@ -611,6 +633,7 @@ aside .signup-science p {
 	position: relative;
 	margin-bottom: 15px;
 }
+
 .editors-pick h2 {
 	font-weight: 700;
 	color: rgb(0, 0, 0);
@@ -638,4 +661,87 @@ aside .signup-science p {
 	bottom: 7px;
 	line-height: 18px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.other-reads::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Other reads */
+
+.other-reads {
+	margin: 40px auto;
+	width: 95%;
+}
+
+.other-reads main {
+	float: left;
+	margin-right: 3%;
+	width: 70%;
+}
+
+.other-reads aside {
+	float: left;
+	width: 27%;
+}
+
+.other-reads main,
+.other-reads aside {
+	padding: 20px 0;
+	border-top: 1px solid #000;
+}
+.other-reads .heading h4 {
+	color: #333;
+	font-size: 0.9rem;
+}
+.other-reads .heading .cosmos {
+	display: inline-block;
+	color: #000;
+	font-size: 0.9rem;
+}
+
+.other-reads .heading .cosmos:hover {
+	text-decoration: underline;
+}
+.other-reads .content {
+	margin: 20px 0 30px;
+}
+.other-reads main .items {
+	width: 32%;
+	float: left;
+}
+.other-reads main .items:nth-of-type(3n + 1),
+.other-reads main .items:nth-of-type(3n + 2) {
+	margin-right: 2%;
+}
+
+.other-reads figcaption .small {
+	font-size: 0.7rem;
+}
+.other-reads figcaption .big {
+	font-size: 0.98rem;
+	color: #000;
+}
+.other-reads figcaption span:first-of-type {
+	text-align: right;
+}
+.other-reads aside .item {
+	border-bottom: 1px solid rgb(226, 226, 226);
+	padding: 15px 0px;
+	font-size: 1.1875rem;
+	line-height: 1.4375rem;
+	font-family: georgia, "times new roman", times, serif;
+	font-weight: 500;
+}
+.other-reads aside .item:first-of-type {
+	border-top: 1px solid rgb(226, 226, 226);
+	margin-top: 15px;
+}
+.other-reads aside a {
+	color: rgb(0, 0, 0);
+}
+.other-reads aside a:hover {
+	color: #999;
 }
