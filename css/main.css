@@ -106,6 +106,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: georgia, 'times new roman', times, serif;
+  overflow-x: hidden;
 }
 
 ol,
@@ -796,6 +797,97 @@ ul.nav-items {
 }
 
 /* Footer */
+.the-logo {
+  width: 200px;
+  float: left;
+}
+
+.homepage-link {
+  float: right;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #0338b6;
+}
+
+.footer-logo {
+  border-style: double none none none;
+  border-color: #ccc;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-logo::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.footer-links li {
+  /* width: 80%; */
+  display: block;
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  line-height: 1.4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+
+.footer-links .link:hover {
+  text-decoration: underline;
+}
+
+.footer-links::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.news,
+.opinion,
+.arts,
+.living,
+.more,
+.subscribe {
+  float: left;
+  width: 15%;
+  margin: 0.5%;
+}
+
+.subscribe li {
+  padding-left: 8px;
+  margin-right: 2px;
+}
+
+.subscribe {
+  border-left: 1px solid #ccc;
+}
+
+.subscribe .link-small {
+  font-size: 0.7rem;
+}
+
+.subscribe .link.edge {
+  border-bottom: 1px solid #ccc;
+}
+
+.subscribe .link-big {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.subscribe i {
+  padding-right: 7px;
+}
+
 footer.footer {
   position: relative;
   top: 100px;
@@ -812,7 +904,7 @@ footer.footer {
 footer .copyright {
   text-align: center;
   width: 50%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 footer .footer-content .copyright p {
@@ -1141,9 +1233,45 @@ footer .footer-content .copyright li {
   }
 
   /* Footer */
+  .footer-links {
+    border: none;
+  }
+
+  .footer-logo {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .news,
+  .opinion,
+  .arts,
+  .living,
+  .more,
+  .subscribe {
+    float: none;
+  }
+
+  .footer-links .li {
+    padding: none;
+  }
+
+  .subscribe {
+    border: none;
+  }
+
+  .footer-links .link {
+    display: none;
+  }
+
+  .footer-links ul {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
 
   footer .copyright {
     width: 100%;
+    border: none;
   }
 
   footer .copyright p,
