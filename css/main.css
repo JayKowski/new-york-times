@@ -806,7 +806,7 @@ ul.nav-items {
   float: right;
   font-size: 0.8rem;
   text-decoration: none;
-  color: #0338b6;
+  color: #6288a5;
 }
 
 .footer-logo {
@@ -898,7 +898,6 @@ footer.footer {
 .footer-content {
   border-top: 4px double #eee;
   border-bottom: 1px solid #eee;
-  overflow: auto;
 }
 
 footer .copyright {
@@ -1256,6 +1255,10 @@ footer .footer-content .copyright li {
 
   .subscribe {
     border: none;
+  }
+
+  .subscribe li{
+    padding-left: 0;
   }
 
   .footer-links .link {
